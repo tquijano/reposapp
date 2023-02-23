@@ -4,7 +4,7 @@ import { login } from "../../utilities/auth/login";
 const initialState = { 
   auth: 'unauthenticated', //not-auth, pending
   username: '',
-  githubUser: '',
+  token: '',
 }
 
 

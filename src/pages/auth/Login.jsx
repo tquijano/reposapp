@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { Link, useParams, useSearchParams } from "react-router-dom";
 import useForm from "../../hooks/useForm";
 import { login } from "../../utilities/auth/login";
-import { clientID, clientSecret } from "../../utilities/baseurl";
+import { clientID, clientSecret, redirecURL } from "../../utilities/baseurl";
 import axios from "axios";
 import githubApi from "../../axios/githubApi";
 import apiGithubApi from "../../axios/apiGithubApi";
@@ -27,7 +27,7 @@ const Login = () => {
     if (code) {
       githubApi
         .post(
-          `/login/oauth/access_token?client_id=${clientID}&client_secret=${clientSecret}&code=${code}`
+          `/login/oauth/access_token?client_id=${clientID}&redirect_uri=${redirecURL}&client_secret=${clientSecret}&code=${code}`
         )
         .then((response) => {
           console.log("response.data", response.data);

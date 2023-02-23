@@ -1,8 +1,8 @@
-import { clientID, clientSecret } from "../baseurl";
+import { clientID, clientSecret, redirecURL } from "../baseurl";
 
 export const singUp = ( ) => {
   githubApi.post(
-    `/login/oauth/access_token?client_id=${clientID}&client_secret=${clientSecret}&code=${code}`
+    `/login/oauth/access_token?client_id=${clientID}&redirect_uri=${redirecURL}&client_secret=${clientSecret}&code=${code}`
   )
   .then((response) => {
     console.log("response.data", response.data);

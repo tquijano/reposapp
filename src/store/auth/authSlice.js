@@ -1,19 +1,11 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { login } from "../../utilities/auth/login";
+import { createSlice } from "@reduxjs/toolkit";
+import { login, logout } from "./thunks";
 
+const githubUser = localStorage.getItem("githubUser")
 const initialState = { 
-  auth: 'unauthenticated', //not-auth, pending
-  username: '',
-  token: '',
+  auth: githubUser ? 'authenticated': 'unauthenticated', //not-auth, pending
+  user: '',
 }
-
-
-export const logout = createAsyncThunk(
-  "auth/logout",
-  async () => {
-    localStorage.clear()
-  }
-)
 
 export const authSlice = createSlice({
   name: "auth",

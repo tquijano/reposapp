@@ -7,7 +7,7 @@ import Navbar from "../../organisms/Navbar";
 
 const User = () => {
   const username = localStorage.getItem("username");
-  const githubUser = localStorage.getItem("githubuser");
+  const githubUser = localStorage.getItem("githubUser");
   const img = localStorage.getItem("img");
   return (
     <>

@@ -1,4 +1,38 @@
-# Reposapp!
+# Ingles Reposapp!
+
+Hello! Here I will explain how the application is built **https://reposapp.vercel.app/**.
+It is important to note that the application works with the localstorage.
+Let's start:
+
+## Sign Up
+
+For registration, validations are implemented such as creating a username with a minimum of 4 characters and passwords with a minimum of 4 characters.
+
+When registering the username will be stored in the localStorage and the password in the sessionStorage.
+
+> **Note:** The password is stored in the sessionStorage simulating a database.
+
+When you click on "sign up" a GitHub code is generated that will be used in login to obtain the Github access token,
+
+## Login
+
+The login also implements validations to verify that no empty fields are entered, performs the check with the localStorage and if the data match the request is made to obtain the GitHub access token, followed by a new request to obtain the user information in GitHub such as username, photo and so on.
+
+## Repositories
+
+Once logged in, you will be able to view your public repositories, switch tabs to view favorites, add or remove projects from favorites and search by project name.
+
+## Profile
+
+Here you will find your user information and some additional data
+
+# Important considerations
+
+The project uses oauth to access github.
+
+If you run the project from the localhost as soon as the application registers it redirects you to https://reposapp.vercel.app/ (This was defined in the creation of the oauth application with GitHub) where you must register again since you would not have the registration in the localStorage, if you have any problem with the execution of the project you can write me to **tanitagissellqg@gmail.com**
+
+# Español Reposapp!
 
 Hola! A continuación te explicare como esta construida la aplicación **https://reposapp.vercel.app/**
 Es importante tener en cuenta que la aplicación funciona con el localstorage

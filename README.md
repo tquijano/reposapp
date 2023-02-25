@@ -1,5 +1,7 @@
 # Ingles Reposapp!
 
+> **Important:** To make the application work properly, add and turn on this extension on Google Chrome. **https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf**
+
 Hello! Here I will explain how the application is built **https://reposapp.vercel.app/**.
 It is important to note that the application works with the localstorage.
 Let's start:
@@ -33,6 +35,8 @@ The project uses oauth to access github.
 If you run the project from the localhost as soon as the application registers it redirects you to https://reposapp.vercel.app/ (This was defined in the creation of the oauth application with GitHub) where you must register again since you would not have the registration in the localStorage, if you have any problem with the execution of the project you can write me to **tanitagissellqg@gmail.com**
 
 # Español Reposapp!
+
+> **Important:** Para que la aplicacion pueda correr exisosamente es muy importante que añanda y active esta extension en google chrome **https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf**
 
 Hola! A continuación te explicare como esta construida la aplicación **https://reposapp.vercel.app/**
 Es importante tener en cuenta que la aplicación funciona con el localstorage

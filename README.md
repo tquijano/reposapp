@@ -1,4 +1,4 @@
-# Ingles Reposapp!
+# English Reposapp!
 
 > **Important:** To make the application work properly, add and turn on this extension on Google Chrome. **https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf**
 
